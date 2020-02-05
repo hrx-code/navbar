@@ -43,24 +43,23 @@ navSlide();
 // ---------------------------------------------------------------
 
 const func=()=>{
-  console.log("func is opening");
+
   const mainpage=document.querySelector('main');
   const burger1=document.querySelector('.burger');
   const navLinks1=document.querySelectorAll('.nav-links li');
-  console.log(mainpage);
   const nav1=document.querySelector('.nav-links');
-  console.log(nav1);
+
   mainpage.addEventListener('click',()=>{
-    nav1.classList.toggle('nav-active');
-    burger1.classList.toggle('toggle');
+    nav1.classList.remove('nav-active');
+    burger1.classList.remove('toggle');
     //----------------------
-    navLinks1.forEach((link,index)=>{
+      navLinks1.forEach((link,index)=>{
         if(link.style.animation){
           link.style.animation='';
         }
-        else{
+    /*  else{
           link.style.animation=`navlinkfade 0.5s ease forwards ${index/7}s`;
-        }
+        } */
       console.log(index / 7);
       console.log("-----------");
     });
