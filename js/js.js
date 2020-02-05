@@ -11,7 +11,6 @@ const navSlide=()=>{
       navLinks.forEach((link,index)=>{
           if(link.style.animation){
             link.style.animation='';
-            console.log(1);
           }
           else{
             link.style.animation=`navlinkfade 0.5s ease forwards ${index/7}s`;

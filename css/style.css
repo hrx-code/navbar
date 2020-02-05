@@ -5,6 +5,8 @@
 }
 /* all logo and 4links and 3 lines summed up in nav and designed as flex*/
 nav{
+  position:sticky;
+  top:0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -62,10 +64,10 @@ nav{
     overflow-x: hidden;
   }
   .nav-links{
-    position: absolute;
+    position: fixed;
     right:0px;
-    height:92vh;
-    top:8vh;
+    height:100%;
+    top:8%;
     background: #4D4954;
     display: flex;
     flex-direction: column;
@@ -78,7 +80,9 @@ nav{
     opacity:0;
   }
   .burger{
-    display:flex;
+    display:block;
+
+
 
   }
 }
